@@ -1,6 +1,7 @@
 # Creating a SP grid
+**SP grids** store the information of what areas in your game map are empty (and so can be transitted) and what areas are obstacles. This information will then be used to find the shortest path between two points in the grid.
 ## sp_grid_create
-Creates an empty SP Grid in the specified position.
+Creates an empty SP Grid in the specified position and returns its index.
 
 | Parameter   | Type | Description
 |-------------|------|------------
