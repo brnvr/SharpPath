@@ -64,6 +64,8 @@ where positions with value '0' will be considered empty cells in the SP grid, an
 | array       | Array   | The bidimentional array.
 | inverted    | Bool    | *Optional* If true, then positions with value '0' will be considered obstacles in the DS grid, and positions with value '1' will be considered empty.
 
+### Example
+
 	//Creates a bidimentional array with values 0 and 1;
 		
 	array = [
