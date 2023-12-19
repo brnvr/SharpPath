@@ -19,20 +19,19 @@
   "extensionVersion": "0.0.1",
   "files": [
     {"resourceType":"GMExtensionFile","resourceVersion":"1.0","name":"","constants":[],"copyToTargets":-1,"filename":"SharpPath.dll","final":"","functions":[
-        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"SpGridAdd","argCount":0,"args":[
-            2,
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"SpGridCreateFromBuffer","argCount":0,"args":[
             2,
             1,
-          ],"documentation":"","externalName":"SpGridAdd","help":"SpGridAdd(id, width, buffer_base64)","hidden":false,"kind":1,"returnType":2,},
-        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"SpGridRemove","argCount":0,"args":[
+          ],"documentation":"","externalName":"SpGridCreateFromBuffer","help":"SpGridCreateFromBuffer(width, buffer_base64)","hidden":true,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"SpGridDelete","argCount":0,"args":[
             2,
-          ],"documentation":"","externalName":"SpGridRemove","help":"SpGridRemove(id)","hidden":false,"kind":1,"returnType":2,},
+          ],"documentation":"","externalName":"SpGridDelete","help":"SpGridDelete(id)","hidden":true,"kind":1,"returnType":2,},
         {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"SpGridSetObstacle","argCount":0,"args":[
             2,
             2,
             2,
             2,
-          ],"documentation":"","externalName":"SpGridSetObstacle","help":"SpGridSetObstacle(id, x, y, is_obstacle)","hidden":false,"kind":1,"returnType":2,},
+          ],"documentation":"","externalName":"SpGridSetObstacle","help":"SpGridSetObstacle(id, x, y, is_obstacle)","hidden":true,"kind":1,"returnType":2,},
         {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"SpGridFindPath","argCount":0,"args":[
             2,
             2,
@@ -41,18 +40,28 @@
             2,
             2,
             2,
-          ],"documentation":"","externalName":"SpGridFindPath","help":"SpGridFindPath(id, xstart, ystart, xdestination, ydestination, search_directions, include_start)","hidden":false,"kind":1,"returnType":2,},
+            2,
+          ],"documentation":"","externalName":"SpGridFindPath","help":"SpGridFindPath(id, path_id, xstart, ystart, xdestination, ydestination, search_directions, include_start)","hidden":true,"kind":1,"returnType":2,},
         {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"RegisterCallbacks","argCount":0,"args":[
             1,
             1,
             1,
             1,
           ],"documentation":"","externalName":"RegisterCallbacks","help":"RegisterCallbacks(arg0, arg1, arg2, arg3)","hidden":true,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"SpGridCreate","argCount":0,"args":[
+            2,
+            2,
+          ],"documentation":"","externalName":"SpGridCreate","help":"SpGridCreate(width, height)","hidden":true,"kind":1,"returnType":2,},
+        {"resourceType":"GMExtensionFunction","resourceVersion":"1.0","name":"SpGridClearObstacles","argCount":0,"args":[
+            2,
+          ],"documentation":"","externalName":"SpGridClearObstacles","help":"SpGridClearObstacles(id)","hidden":true,"kind":1,"returnType":2,},
       ],"init":"","kind":1,"order":[
         {"name":"RegisterCallbacks","path":"extensions/SharpPath/SharpPath.yy",},
-        {"name":"SpGridAdd","path":"extensions/SharpPath/SharpPath.yy",},
-        {"name":"SpGridRemove","path":"extensions/SharpPath/SharpPath.yy",},
+        {"name":"SpGridCreate","path":"extensions/SharpPath/SharpPath.yy",},
+        {"name":"SpGridCreateFromBuffer","path":"extensions/SharpPath/SharpPath.yy",},
+        {"name":"SpGridDelete","path":"extensions/SharpPath/SharpPath.yy",},
         {"name":"SpGridSetObstacle","path":"extensions/SharpPath/SharpPath.yy",},
+        {"name":"SpGridClearObstacles","path":"extensions/SharpPath/SharpPath.yy",},
         {"name":"SpGridFindPath","path":"extensions/SharpPath/SharpPath.yy",},
       ],"origname":"","ProxyFiles":[],"uncompress":false,"usesRunnerInterface":false,},
   ],
