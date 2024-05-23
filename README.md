@@ -1,2 +1,2 @@
 # SharpPath
- GMS extension for grid based asynchronous pathfinding
+C# Extension that provides grid based asynchronous pathfinding for Game Maker Studio
