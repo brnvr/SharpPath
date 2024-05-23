@@ -10,6 +10,8 @@ This repository contains the C# code, the extension files as well as a GMS examp
 
 - It must be taken into consideration that if an object has finished following its current path and there are no avalaible cores to process a new path, it will be standing still until a core is made avaliable. The game won't freeze, but this may affect gameplay in some situations.
 
+- It's still only built for Windows, but that can change soon.
+
 ## Use
 
 Build a grid and add obstacles:
