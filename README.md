@@ -26,7 +26,7 @@ Alternatively, you can also initialize the grid with obstacles using an array or
 
 ```gml
 //0 are empty cells and 1 are obstacles
-sp_grid_create_from_array(0, 0, 24, 24, [
+grid = sp_grid_create_from_array(0, 0, 24, 24, [
 	[0, 0, 1, 0, 1],
 	[1, 0, 0, 0, 0],
 	[1, 1, 0, 1, 0],
