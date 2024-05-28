@@ -44,6 +44,7 @@ path = sp_path_create(grid)
 Search for the path:
 
 ```gml
+//Searches for the nearest path from the current instance to 'obj_target'
 sp_find_path(path, id, obj_target)
 ```
 
