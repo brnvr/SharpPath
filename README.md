@@ -48,7 +48,7 @@ Search for the path:
 sp_find_path(path, id, obj_target)
 ```
 
-Alternatively, you can set a loop in the **Step** event so the path will periodically be searched for:
+Alternatively, you can set a loop in a **Step** event so the path will periodically be searched for:
 
 ```gml
 /*Searches for the path each 50 steps. Increasing the period will also increase performance,
