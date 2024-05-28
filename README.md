@@ -19,6 +19,7 @@ Build a grid and add obstacles:
 ```gml
 //creates grid in position (0, 0), each cell having the dimentions (24, 24) 
 grid = sp_grid_create(0, 0, 24, 24, 16, 16)
+//mark each cell where an 'obj_obstacle' is located
 sp_grid_add_obstacles_object(grid, obj_obstacle)
 ```
 
