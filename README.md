@@ -52,7 +52,7 @@ Alternatively, you can set a loop in the **Step** event so the path will periodi
 ```gml
 /*Searches for the path each 50 steps. Increasing the period will also increase performance,
 but may cause delayed reactions on the follower object.*/
-sp_find_path(path, id, obj_target, 50)
+sp_find_path_loop(path, id, obj_target, 50)
 ```
 
 Update the path asynchronously inside the **Async - System** event:
