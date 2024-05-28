@@ -14,7 +14,7 @@ This repository contains the C# project, the extension files as well as a GMS ex
 
 ## Use
 
-Build a grid and add obstacles:
+Create a grid and add obstacles:
 
 ```gml
 //creates grid in position (0, 0), each cell having the dimentions (24, 24) 
