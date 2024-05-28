@@ -66,6 +66,6 @@ Finally, inside the **Step** event, make the current instance follow the path:
 
 ```gml
 //Follows the path with speed 1
-sp_follow_path(path, id, 1)
+sp_follow_path(path, 1)
 ```
 
