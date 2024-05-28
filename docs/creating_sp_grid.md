@@ -15,10 +15,10 @@ Creates an empty SP Grid in the specified position and returns its index.
 ### Example
 
 ```gml
-	//Creates a SP grid in the position (15, 25), with 75x75 cells, each cell
-	//with the size of 16x16 pixels.
+//Creates a SP grid in the position (15, 25), with 75x75 cells, each cell
+//with the size of 16x16 pixels.
 	
-    	sp_grid = sp_grid_create(15, 25, 75, 75, 16, 16);
+sp_grid = sp_grid_create(15, 25, 75, 75, 16, 16);
 ```
 
 ## sp_grid_create_from_ds_grid
@@ -35,17 +35,19 @@ Creates a SP grid from an existing DS grid. Cells with value '0' in the DS grid 
 
 ### Example
 
-	//Creates DS grid with 20x20 cells and sets the value of specified cells to '1'.
+```gml
+//Creates DS grid with 20x20 cells and sets the value of specified cells to '1'.
 	
-	ds_grid = ds_grid_create(20, 20);
-	ds_grid[# 13, 1] = 1;
-	ds_grid[# 15, 3] = 1;
-	ds_grid[# 19, 2] = 1; 
+ds_grid = ds_grid_create(20, 20);
+ds_grid[# 13, 1] = 1;
+ds_grid[# 15, 3] = 1;
+ds_grid[# 19, 2] = 1; 
 		
-	//Creates a SP grid from the DS grid in the position(0, 15). Every cell
-	//with value '1' in the DS grid will be an obstacle in the SP grid.
+//Creates a SP grid from the DS grid in the position(0, 15). Every cell
+//with value '1' in the DS grid will be an obstacle in the SP grid.
 	
-	sp_grid = sp_grid_create_from_ds_grid(0, 15, 16, 16, ds_grid, false);
+sp_grid = sp_grid_create_from_ds_grid(0, 15, 16, 16, ds_grid, false);
+```
 
 ## sp_grid_create_from_array
 Creates a SP Grid from a bidimentional array in the format:
@@ -68,16 +70,18 @@ where positions with value '0' will be considered empty cells in the SP grid, an
 
 ### Example
 
-	//Creates a bidimentional array with values 0 and 1;
+```gml
+//Creates a bidimentional array with values 0 and 1;
 		
-	array = [
-		[0, 1, 0, 1, 0]
-		[0, 1, 0, 0, 0]
-		[0, 0, 1, 1, 0]
-		[0, 0, 0, 0, 0]
-	];
+array = [
+	[0, 1, 0, 1, 0]
+	[0, 1, 0, 0, 0]
+	[0, 0, 1, 1, 0]
+	[0, 0, 0, 0, 0]
+];
 	
-	//Creates a SP grid from the array in the position (0, 0). Every position in
-	//the array with value 1 will be an obstacle in the SP grid.
+//Creates a SP grid from the array in the position (0, 0). Every position in
+//the array with value 1 will be an obstacle in the SP grid.
 
-	sp_grid = sp_grid_create_from_array(0, 0, 16, 16, array, false);
+sp_grid = sp_grid_create_from_array(0, 0, 16, 16, array, false);
+```
