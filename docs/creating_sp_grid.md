@@ -51,12 +51,14 @@ sp_grid = sp_grid_create_from_ds_grid(0, 15, 16, 16, ds_grid, false);
 
 ## sp_grid_create_from_array
 Creates a SP Grid from a bidimentional array in the format:
-	
-	[[0, 0, 1, 1, 0],
-	 [0, 1, 0, 0, 0],
-	 [0, 0, 0, 0, 1],
-	 [0, 1, 1, 1, 1]]
-	 
+
+ ```gml
+[[0, 0, 1, 1, 0],
+ [0, 1, 0, 0, 0],
+ [0, 0, 0, 0, 1],
+ [0, 1, 1, 1, 1]]
+ ```
+
 where positions with value '0' will be considered empty cells in the SP grid, and positions with value '1' will be considered obstacles (except if the **inverted** flag is set to true).
 
 | Parameter   | Type    | Description
