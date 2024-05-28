@@ -75,7 +75,7 @@ where positions with value '0' will be considered empty cells in the SP grid, an
 ```gml
 //Creates a bidimentional array with values 0 and 1;
 		
-array = [
+var array = [
 	[0, 1, 0, 1, 0]
 	[0, 1, 0, 0, 0]
 	[0, 0, 1, 1, 0]
