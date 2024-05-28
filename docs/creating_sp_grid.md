@@ -14,10 +14,12 @@ Creates an empty SP Grid in the specified position and returns its index.
 
 ### Example
 
+```gml
 	//Creates a SP grid in the position (15, 25), with 75x75 cells, each cell
 	//with the size of 16x16 pixels.
 	
-    sp_grid = sp_grid_create(15, 25, 75, 75, 16, 16);
+    	sp_grid = sp_grid_create(15, 25, 75, 75, 16, 16);
+```
 
 ## sp_grid_create_from_ds_grid
 Creates a SP grid from an existing DS grid. Cells with value '0' in the DS grid will be considered empty and cells with value '1' will be considered obstacles (except if the **inverted** flag is set to true).
